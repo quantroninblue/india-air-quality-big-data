@@ -36,12 +36,11 @@ The data is not included in this repository. Download `archive.zip` from Kaggle 
 | Hive | `04_Code/hive_tables.py` | External and managed tables (CSV SerDe, Parquet, ORC), a Python UDF, HiveQL queries |
 | Profiling | `04_Code/dataset_profile.py` | Dataset profile, data dictionary, inspection tables and a data-quality table |
 | Charts | `04_Code/visualize.py` | Charts generated from the result tables |
-| Notebooks | `04_Code/notebooks/` | Data loading and inspection, and a walkthrough of the pipeline |
 
 ## Tech stack
 
 Hadoop 3.4.1 (HDFS, YARN, MapReduce streaming) on a single-node cluster, Apache Spark 4.0.1
-(PySpark, Spark SQL, Hive support), Parquet and ORC, Python 3.12, pandas, Matplotlib, Jupyter.
+(PySpark, Spark SQL, Hive support), Parquet and ORC, Python 3.12, pandas, Matplotlib.
 
 ## Running it
 
