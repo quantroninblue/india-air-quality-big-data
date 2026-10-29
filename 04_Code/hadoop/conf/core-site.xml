@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!-- Single-node (pseudo-distributed) HDFS for the CPCB project. -->
+<configuration>
+  <property>
+    <name>fs.defaultFS</name>
+    <value>hdfs://localhost:9000</value>
+  </property>
+  <property>
+    <name>hadoop.tmp.dir</name>
+    <value>${user.home}/opt/hadoop_data/tmp</value>
+  </property>
+</configuration>
