@@ -69,7 +69,7 @@ report, slides and phase documents are not published, so `./run.sh` skips them w
 with a short explanation above every code cell. It downloads the dataset itself and needs no Hadoop
 cluster: Spark reads from Colab's local disk instead of HDFS.
 [Open it in Colab](https://colab.research.google.com/github/quantroninblue/india-air-quality-big-data/blob/main/CPCB_Air_Quality_Colab.ipynb)
-and use `Runtime > Run all` (about 20-30 minutes; set `QUICK_RUN = True` for a few-minute demo on three states).
+and use `Runtime > Run all` (about 10-15 minutes; set `QUICK_RUN = True` for a few-minute demo on three states).
 
 ## Main results
 
