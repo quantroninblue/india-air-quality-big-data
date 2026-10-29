@@ -62,6 +62,15 @@ CPCB_STORAGE=local ./run.sh         # run on local files without Hadoop
 Spark needs Java 17 or newer; the Hadoop daemons run on Java 11. The scripts that build the written
 report, slides and phase documents are not published, so `./run.sh` skips them when they are missing.
 
+## Colab notebook
+
+[`CPCB_Air_Quality_Colab.ipynb`](CPCB_Air_Quality_Colab.ipynb) runs the whole pipeline in one notebook
+(ingest, cleaning, AQI, Spark SQL for all five questions, RDDs, the MapReduce scripts, Hive tables),
+with a short explanation above every code cell. It downloads the dataset itself and needs no Hadoop
+cluster: Spark reads from Colab's local disk instead of HDFS.
+[Open it in Colab](https://colab.research.google.com/github/quantroninblue/india-air-quality-big-data/blob/main/CPCB_Air_Quality_Colab.ipynb)
+and use `Runtime > Run all` (about 20-30 minutes; set `QUICK_RUN = True` for a few-minute demo on three states).
+
 ## Main results
 
 - 91 of 133 well-monitored cities are above India's annual PM2.5 limit of 40 ug/m3, and the 15 worst are all in north India.
